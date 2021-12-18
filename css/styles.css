@@ -181,8 +181,8 @@ ul {
   margin-right: 40px;
 }
 
-.global-search:hover {
-  width: 300px;
+.global-search:focus {
+  width: 250px;
 }
 
 .sign-up {
@@ -400,18 +400,292 @@ ul {
 
 .our-salon {
   background-image: url("../img/bg-black.png");
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
 .our-salon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white-color);
 }
-.container {
+
+.our-salon-blog-header {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 21px;
+  text-align: center;
 }
-.our-salon-header {
+
+.our-salon-blog-heading {
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-family: "Noto Serif", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
 }
-.our-salon-heading {
-}
+
 .our-salon-text {
+  margin-top: 0;
+  margin-bottom: 60px;
+  max-width: 730px;
 }
-.button {
+
+.blog {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-lists {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.blog-item {
+  margin-left: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-item:hover {
+  opacity: 0.6;
+}
+
+.blog-item:active {
+  opacity: 0.4;
+}
+
+.blog-item:nth-child(1) {
+  background-image: url("../img/hands-ring-braslet.jpg");
+}
+.blog-item:nth-child(2) {
+  background-image: url("../img/corona.jpg");
+}
+.blog-item:nth-child(3) {
+  background-image: url("../img/phone-earings.jpg");
+}
+
+.blog-link {
+  width: 350px;
+  padding-top: 248px;
+  padding-bottom: 35px;
+  font-weight: 400;
+  font-size: 21px;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.galery {
+}
+.galery-container {
+  padding-bottom: 150px;
+}
+
+.galery-lists {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galery-item-play {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galery-item-play:first-child {
+  background-image: url("../img/rings-neckles.jpg");
+}
+.galery-item-play:last-child {
+  background-image: url("../img/hand-with-ring.jpg");
+}
+
+.galery-link-play {
+  width: 70px;
+  height: 70px;
+  padding: 115px 242px;
+  object-fit: cover;
+}
+
+.galery-item {
+}
+
+.galery-link {
+  display: block;
+}
+
+.galery-link-img {
+  display: block;
+  object-fit: cover;
+  width: 278px;
+  height: 300px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+
+.subscribe-text::before {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/subscribe__icon.svg");
+  background-size: cover;
+  margin-right: 20px;
+  content: "";
+}
+
+.subscribe-text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form-subscribe {
+  padding: 15px;
+  border: 1px solid var(--white-color);
+}
+
+.subscribe-form-content {
+  padding: 20px 22px;
+  background-color: var(--white-color);
+}
+
+.subscribe-input-email {
+  background-color: var(--white-color);
+  min-width: 200px;
+  padding: 15px 20px;
+  border: 1px solid #d6d6d6;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.5);
+  margin-right: 15px;
+}
+
+.site-footer {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.footer-container {
+}
+
+.footer-top {
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--brand-color);
+  display: flex;
+}
+
+.footer-content {
+  width: 255px;
+}
+
+.footer-content :not(:last-child) {
+  margin-right: 30px;
+}
+.footer-header {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 500;
+  border: none;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--brand-color);
+}
+
+.footer-lists {
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer-link {
+}
+.footer-text {
+  margin 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--brand-color);
+}
+
+.footer-payment-link {
+  display: inline-block;
+}
+
+.footer-payment-link :not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-payment-img {
+  width: 45px;
+  height: 30px;
+  display: block;
+  object-fit: cover;
+}
+
+.footer-contact-item:not(:last-child){
+  margin-bottom: 15px;
+}
+
+.footer-contact-item::before{
+  display: inline-block;
+  margin-right: 20px;
+width: 20px;
+height: 20px;
+content: "";
+background-image: url("../img/entypo_old-phone.svg");
+}
+
+.footer-contact-item:last-child::before{
+background-image: url("../img/entypo_mail.svg");
+}
+
+
+
+.social-link {
+  display: inline-block;
+}
+
+.social-link:not(:last-child){
+  margin-right: 20px;
+}
+
+.social-img {
+  width: 25px;
+  height: 25px;
+  display: block;
+  object-fit: contain;
+}
+
+.footer-bottom-list {
+  padding-top: 20px;
+  display: flex;
+}
+.footer-bottom-item:not(:last-child){
+  margin-right: 185px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -446,5 +720,25 @@ ul {
 
   .promo-content-item:nth-child(6) {
     background-image: url("../img/oclock@2x.jpg");
+  }
+
+  .blog-item:nth-child(1) {
+    background-image: url("../img/hands-ring-braslet@2x.jpg");
+  }
+
+  .blog-item:nth-child(2) {
+    background-image: url("../img/corona@2x.jpg");
+  }
+
+  .blog-item:nth-child(3) {
+    background-image: url("../img/phone-earings@2x.jpg");
+  }
+
+  .galery-item-play:first-child {
+    background-image: url("../img/rings-neckles@2x.jpg");
+  }
+
+  .galery-item-play:last-child {
+    background-image: url("../img/hand-with-ring@2x.jpg");
   }
 }
