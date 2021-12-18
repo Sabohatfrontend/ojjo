@@ -582,6 +582,14 @@ ul {
   margin-right: 15px;
 }
 
+.subscribe-input-email:not(:placeholder-shown){
+  border: 1px solid red;
+}
+
+.subscribe-input-email:valid{
+  border: 1px solid green;
+}
+
 .site-footer {
   padding-top: 80px;
   padding-bottom: 20px;
